@@ -1,0 +1,40 @@
+{
+  "name": "beyondchats-backend",
+  "version": "1.0.0",
+  "description": "BeyondChats Assignment - Backend API with Web Scraping",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "scrape": "node src/scripts/runScraper.js",
+    "automate": "node src/scripts/runAutomation.js",
+    "test-apis": "node src/scripts/testAPIs.js"
+  },
+  "keywords": [
+    "beyondchats",
+    "scraping",
+    "api",
+    "llm"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "@mozilla/readability": "^0.6.0",
+    "axios": "^1.13.2",
+    "cheerio": "^1.1.2",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "express-validator": "^7.3.1",
+    "jsdom": "^27.4.0",
+    "mongoose": "^9.0.2",
+    "puppeteer": "^24.34.0",
+    "readability": "^0.1.0",
+    "winston": "^3.19.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
+}
